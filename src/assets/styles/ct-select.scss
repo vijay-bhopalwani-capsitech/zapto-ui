@@ -1,0 +1,108 @@
+@import url("@capsitech/select/dist/assets/select.css");
+
+
+.selectContainer .formInput {
+  // border: none;
+  // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #d5d5d5;
+  // border-radius: $input-border-radius;
+  padding: 0.5833rem 1.15rem;
+  // font-size: $input-font-size;
+  width: 100%;
+}
+
+.formInput-sm .formInput {
+  border-radius: 10px;
+  // padding: 0.344rem $input-padding-x-sm;
+}
+
+.formInput-xs .formInput {
+  // padding: 0 $input-padding-x-sm;
+  // border-radius: $input-border-radius-xs;
+}
+
+.formInput-xs .selectedItemChip {
+  padding: 1px 5px;
+}
+
+.formInput-xs .chipLabel {
+  margin-right: 0;
+}
+
+.radius-pill .formInput {
+  // border-radius: $input-border-radius;
+}
+
+
+.is-invalid .formInput {
+  border: 1px solid #dc3545;
+}
+
+.formInput:has(input:focus), .selectContainer:has(.selectDropdown) > .formInput, .formInput:has(.custom-tooltip .show) {
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px #00000010;
+}
+
+.selectValueContainer > .selectCloseIcon {
+  margin-right: 10px;
+}
+
+.selectContainer .selectValueContainer .chipsContainer .selectedItemChip {
+  border-radius: 0.2rem;
+  border: none;
+  font-weight: 500;
+  font-size: 85%;
+  max-width: 120px;
+  background-color: #e6e6e6;
+}
+
+.selectContainer .selectValueContainer .chipsContainer .selectedItemChip .selectedItemChipLabel {
+  max-width: 100px;
+  padding: 1px 0;
+}
+
+.selectOption {
+  border: none;
+  padding: 3px 10px;
+}
+
+.selectOption.active {
+  background-color: #ffefef ;
+  // color: $primary !important;
+}
+
+.selectOption:hover {
+  background-color: #eee;
+}
+
+.selectDropdown {
+  border-radius: 10px !important;
+  z-index: 4 !important;
+}
+
+.selectDropdownList .focused {
+  background-color: #eee;
+  //border: none;
+}
+
+.hide-chips-bg .selectedItemChip {
+  background-color: transparent !important;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.formInput-xs .selectDropdown {
+  // border-radius: $input-border-radius-xs !important;
+}
+
+.formInput-xs .selectDropdown.placement-top {
+  transform: translateY(calc(-100% - 0.25rem - 27px)) !important;
+}
+
+.formInput-xs .selectValueContainer svg {
+  width: 10px !important;
+}
+
+.formInput-xs .selectOption {
+  // font-size: $font-size-xs;
+}

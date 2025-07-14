@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* Scrollbar css start */
+*::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3rem;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #eeeeee;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a1a1a1;
+  outline: 1px solid #a1a1a1;
+  border-radius: 10px;
+}
+
+/* Scrollbar css end */
+
+/* Toastify css */
+.Toastify__toast--success {
+  border-left: 5px solid #07bc0c !important;
+  /* border-radius: 50px !important;
+  background: #f0f9fa !important; */
+}
+
+.Toastify__toast--warning {
+  background: #ffe8bc !important;
+}
+
+.Toastify__toast--error {
+  border-left: 5px solid #eb5757;
+  /* border-radius: 50px !important;
+  background: #fae1e2 !important; */
+}
+
+.toastBody {
+  font-family: inherit !important;
+  color: #10171d;
+  /* #10171D */
+  font-size: 0.875rem !important;
+}
+
+.toastProgress {
+  background: #333f48 !important;
+}
+
+.Toastify__toast {
+  min-height: 50px;
+  font-family: inherit !important;
+}
+
+/* Toastify css end */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+div {
+  scroll-margin-top: 50px;
+}
+
+body {
+  /* display: flex;
+    flex:1; */
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/**--- Container width ------*/
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
+
+/*
+OVERRIDDEN CSS OVER ANT UI
+*/
+
+.ant-tabs-tab-btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*
+Menu classes
+*/
+.ant-menu {
+  border: none !important;
+}
+
+/*
+Ant modal classes
+*/
+
+.custom-modal .ant-modal-content {
+  padding: 12px 12px !important;
+}
+
+/*
+Card classes 
+*/
+
+.ant-card-head {
+  padding: 0 !important;
+  margin: 0 12px !important;
+}
+
+/* Input Box Antd Customization */
+
+.ant-col && .ant-typography {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.ant-card-head-title {
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+.card-paragraph {
+  margin-top: 13.69px;
+}
+
+.image-slider {
+  position: relative;
+  width: 300px;
+  /* adjust the width to your liking */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.dot-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}

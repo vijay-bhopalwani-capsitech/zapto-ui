@@ -1,0 +1,1738 @@
+﻿* {
+  font-family: "Open Sans", sans-serif !important;
+  margin: 0px;
+  /*font-size: 13px !important;*/
+}
+
+body {
+  background-color: #f3f4fa !important;
+  font-size: 13px !important;
+  height: 100%;
+  color: #172b4d;
+}
+
+/*         new css for CIT*/
+
+.cit-att-sheet .ant-table-cell {
+  padding: 0px !important;
+}
+.cit-att-sheet thead tr .ant-table-cell {
+  padding: 8px 6px !important;
+}
+
+.cit-add-btn {
+  box-shadow: unset !important;
+}
+
+.cit-table tr th:before {
+  content: unset !important;
+}
+.ant-table-wrapper .ant-table .ant-table-header {
+  border-radius: 0px 0px 0 0;
+}
+.cit-table .ant-table-container table thead tr th {
+  border-radius: 0 !important;
+  border-top: 1px solid rgba(5, 5, 5, 0.2) !important;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.2) !important;
+}
+.att-detail-box {
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  padding: 6px 0 6px 10px;
+}
+.att-detail-box .border-in-box {
+  height: 100%;
+  width: 3px;
+}
+
+.cit-add-punchTime ::placeholder {
+  color: black !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+
+.cit-add-punchTime {
+  background: white !important;
+  padding: 2px 6px !important;
+}
+
+.cit-select-box {
+  padding: 0px !important;
+}
+.cit-select-box .ant-select-item {
+  border-radius: 0px !important;
+  padding: 4px 12px !important;
+  min-height: unset !important;
+  font-size: 13px !important;
+}
+
+.ant-tooltip .ant-tooltip-inner {
+  color: black !important;
+  background-color: white !important;
+}
+.ant-tooltip .ant-tooltip-arrow::before {
+  background-color: white !important;
+}
+
+.att-cal-table-container .ant-spin-nested-loading .ant-spin {
+  max-height: unset !important;
+}
+
+.att-detail-cal table thead tr > th:nth-child(1)::after {
+  content: "n";
+}
+
+.att-detail-cal table thead tr > th:nth-child(2)::after {
+  content: "e";
+}
+
+.att-detail-cal table thead tr > th:nth-child(3)::after {
+  content: "d";
+}
+
+.att-detail-cal table thead tr > th:nth-child(4)::after {
+  content: "u";
+}
+
+.att-detail-cal table thead tr > th:nth-child(5)::after {
+  content: "i";
+}
+
+.att-detail-cal table thead tr > th:nth-child(6)::after {
+  content: "t";
+}
+
+.att-detail-cal table thead tr > th:nth-child(7)::after {
+  content: "n";
+}
+
+/*=============calender table css  Attendance section=============*/
+
+.att-radio-btn .ant-radio-button-wrapper {
+  height: 27px !important;
+  line-height: 26px !important;
+}
+
+.att-radio-btn .ant-radio-button-wrapper-checked {
+  color: #377dff !important;
+  background: #f3f4fa !important;
+  border-color: #d3e3ff !important;
+}
+
+.att-radio-btn .ant-radio-button-wrapper::before {
+  background-color: transparent !important;
+}
+
+.att-detail-cal .ant-picker-calendar-date {
+  border: none !important;
+  height: 50px !important;
+  margin: 0px !important;
+}
+
+.att-detail-cal .table td,
+.table th {
+  border-color: #dee2e6 !important;
+}
+
+.att-detail-cal table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+}
+
+.att-detail-cal td {
+  border: solid 1px #dee2e6 !important;
+  border-style: solid solid none none !important;
+  padding: 0px !important;
+}
+
+.att-detail-cal tr:first-child td:first-child {
+  border-top-left-radius: 4px !important;
+}
+
+.att-detail-cal tr:first-child td:last-child {
+  border-top-right-radius: 4px !important;
+}
+
+.att-detail-cal tr:first-child td:last-child div {
+  border-top-right-radius: 4px !important;
+}
+
+.att-detail-cal tr:last-child td:first-child {
+  border-bottom-left-radius: 4px !important;
+}
+
+.att-detail-cal tr:last-child td:last-child {
+  border-bottom-right-radius: 4px !important;
+}
+
+.att-detail-cal tr:first-child td {
+  border-top-style: solid !important;
+}
+
+.att-detail-cal tr td:first-child {
+  border-left-style: solid !important;
+}
+
+.att-detail-cal tr:last-child td {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.att-detail-cal .ant-picker-content tbody tr .ant-picker-calendar-date-content {
+  height: unset !important;
+}
+
+.att-detail-cal .ant-picker-content thead tr th {
+  padding-left: 15px !important;
+  font-weight: 600;
+}
+
+.att-detail-cal .ant-picker-calendar-date {
+  padding: 0 !important;
+}
+
+.ant-picker-calendar-date {
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: column !important;
+}
+
+.py-0 {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+/*=============calender tags css=============*/
+
+.att-calender-cell {
+  height: 95px;
+}
+
+.isToday {
+  margin: 1px;
+  border: 1px solid #366eff;
+}
+
+.att-calender-cell-inner-box {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.att-calender-cell-data {
+  display: flex;
+  align-items: center;
+}
+
+.att-detail-cal .ant-picker-calendar-date-value {
+  padding-top: 15px;
+  padding-left: 18px;
+  font-weight: 600;
+}
+
+.att-detail-cal .ant-picker-panel {
+  text-align: left !important;
+}
+
+/*       end css of CIT*/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+.ant-table-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background-color: #00000030;
+}
+.ant-breadcrumb a:hover {
+  color: #0d6efd !important;
+  background-color: transparent !important;
+}
+
+.ant-image-mask-info {
+  display: none !important;
+}
+
+.BreadcrumbLink {
+  color: #0d6efd !important;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.h75 {
+  height: 75%;
+}
+
+.h50 {
+  height: 50%;
+}
+
+.h25 {
+  height: 25%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.shadowLight {
+  box-shadow: 0px 0px 12px rgb(214 223 245 / 25%);
+}
+
+.ant-image-mask-info {
+  padding: 0px !important;
+}
+
+.box-shadow-none {
+  box-shadow: unset !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.color {
+  color: #7b8ca8;
+}
+
+.bg-color {
+  background-color: rgb(243 244 250);
+  border-color: #d3e3ff;
+  color: rgb(55 125 255);
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.emp-table-avatar .ant-avatar-string {
+  line-height: 17px !important;
+  transform: scale(0.55) translateX(-55%) !important;
+}
+.bgcolor {
+  background-color: #f8f9ff;
+}
+
+.text-dark {
+  color: #172b4d;
+}
+
+.divider {
+  flex-grow: 1;
+  margin-top: 4px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.opacity50 {
+  opacity: 0.5;
+}
+
+/*========= Company details Card ===========*/
+.companyDetails .ant-card-head-title {
+  padding: 8px 0px;
+}
+.companyDetails .ant-card-head {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 20px;
+}
+
+.companyDetails .ant-card-body {
+  padding: 20px;
+}
+.logo-company {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.spacer-company {
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.inner-since {
+  display: none;
+}
+
+.logo-company .ant-avatar-string {
+  transform: scale(1) translateX(-50%);
+  font-size: 35px;
+  font-weight: 600;
+  font-family: ui-monospace !important;
+}
+/* =================== for word break ===============*/
+.text-wrap {
+  word-break: break-all !important;
+}
+
+/*============view sun-editor classes==========*/
+.viewLetterCard .se-resizing-bar,
+.policy-view .se-resizing-bar,
+.email-view .se-resizing-bar {
+  display: none !important;
+}
+/* =================== Segemented item ===============*/
+.att-segment .ant-segmented-item-selected {
+  background-color: #1677ff !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
+
+.att-segment .ant-segmented-thumb {
+  background-color: #1677ff !important;
+}
+
+.dash-segment .ant-segmented-item {
+  border-radius: 4px !important;
+}
+
+/*==============    custom dropdown button     ===============*/
+.custom-dropdown-btn {
+  width: fit-content !important;
+}
+
+.custom-dropdown-btn .ant-btn-compact-first-item {
+  display: none;
+  height: 24px !important;
+}
+
+.custom-dropdown-btn .ant-btn-compact-last-item {
+  border: none !important;
+  box-shadow: unset !important;
+  height: 24px !important;
+  width: 12px !important;
+  padding: 0px !important;
+}
+
+.dropdown-btn-model {
+  border: 1px solid #efefef !important;
+}
+
+.dropdown-btn-model ul {
+  padding: 4px 0px !important;
+  border-radius: 0px !important;
+}
+.dropdown-btn-model ul li {
+  font-size: 11px !important;
+  border-radius: 0px !important;
+}
+
+.ts-day-circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.custom-collapse {
+  background-color: transparent !important;
+}
+.custom-collapse .ant-collapse-item {
+  background-color: white !important;
+  border: 1px solid #efefef !important;
+  margin-bottom: 15px !important;
+  border-radius: 8px !important;
+}
+.custom-collapse .ant-collapse-header {
+  padding: 8px 16px !important;
+  font-size: 13px !important;
+  font-weight: 600;
+  opacity: 75%;
+  align-items: center !important;
+}
+
+.custom-collapse .ant-collapse-content-box {
+  padding: 0px 0px !important;
+}
+.custom-collapse .ant-collapse-item-active .ant-collapse-header {
+  background-color: #f7f7f7 !important;
+  margin-bottom: 15px !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  font-weight: 600;
+  opacity: 100%;
+}
+
+.policy-collapse {
+  background-color: transparent !important;
+}
+
+/*    .policy-collapse .sun-editor .se-wrapper .se-wrapper-wysiwyg {
+        background: #f3f4fa !important;
+    }
+*/
+
+.policy-collapse .ant-collapse-header {
+  align-items: center !important;
+}
+
+.policy-collapse .policy-view .sun-editor .se-wrapper .se-wrapper-inner {
+  padding: 10px 10px 0 18px !important;
+}
+
+.policy-collapse .policy-view .sun-editor .se-wrapper {
+  z-index: 0 !important;
+}
+/* =================== emp panel dashboard item ===============*/
+.p-12 {
+  padding: 12px;
+}
+
+.ttp-progress-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ttp-blue-color {
+  color: #1677ff;
+}
+
+.ttp-emp-timeline-dash .ant-timeline-item {
+  padding-bottom: 4px !important;
+  margin: 4px !important;
+}
+
+.ttp-emp-dash-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.ttp-timeline-box::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ttp-timeline-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ttp-timeline-box::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+}
+
+/* ===================custom disabled class===============*/
+
+.ant-select-disabled .ant-select-selection-item {
+  color: #1c1a1bb8 !important;
+}
+
+.ant-select-disabled .ant-select-selector {
+  background-color: white !important;
+}
+
+input[disabled] {
+  color: #1c1a1bb8 !important;
+}
+.input-number-p-0 .ant-input-number-input {
+  padding: 0 !important;
+}
+/* ===================custom css for icon with background===============*/
+.avatar-user {
+  border: 2px solid #d1e6ff;
+  background-color: #f4f8ff;
+  cursor: pointer;
+}
+
+.avatar-user .anticon svg {
+  margin-bottom: 1px;
+}
+
+.avatar-user .anticon {
+  color: #8ec1ff !important;
+}
+
+.avatar-emp {
+  background-color: rgb(242, 244, 251);
+}
+
+.avatar-emp .anticon {
+  color: #c5d2ff;
+}
+/*==================custom css for border===========================*/
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.borderlight {
+  border: 1px solid #dfe9f7;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid #dfe9f7 !important;
+}
+
+.borderNone {
+  border: none !important;
+}
+
+.border-rounded-1 {
+  border-radius: 5px;
+}
+
+.doc-image {
+  position: relative;
+}
+
+.doc-image:hover {
+  background-color: #f5f5f5e6;
+  cursor: pointer;
+}
+
+.doc-icon-btn {
+  outline: none;
+  border: none;
+  margin-right: 2px;
+  opacity: 0;
+}
+
+.btndiv {
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease 0.2s;
+}
+
+.doc-image:hover .doc-icon-btn {
+  opacity: 0.5;
+}
+
+.doc-image:hover .btndiv {
+  bottom: 4px;
+}
+
+.doc-icon-btn:hover {
+  opacity: 1 !important;
+}
+/*==================custom css for border radius===========================*/
+
+.roundedCornerSmall {
+  border-radius: 4px;
+}
+
+.roundedCornerMedium {
+  border-radius: 10px;
+}
+
+
+/*==================custom css for ant table===========================*/
+
+.ttp-custom-table .ant-table-column-sorter-up,
+.ant-table-column-sorter-down {
+  font-size: 9px !important;
+}
+
+.ttp-custom-table .ant-pagination-item-active {
+  border-color: transparent !important;
+}
+
+.ttp-custom-table .ant-table .ant-table-row:hover td {
+  background: #f3f4faa1 !important;
+}
+
+.ttp-custom-table .ant-table-cell {
+  padding: 5px 8px !important;
+}
+
+.ttp-custom-table .ant-table-container table tr th,
+td {
+  border-radius: 0px !important;
+}
+
+.ttp-custom-table .ant-table-container table thead tr th {
+  background-color: white !important;
+  border-top: 1px solid rgba(5, 5, 5, 0.2) !important;
+  font-weight: 500;
+}
+
+.ttp-custom-table .ant-pagination-options {
+  display: block !important;
+  position: absolute;
+  left: 0;
+}
+
+.ttp-custom-table td.ant-table-column-sort {
+  background: none;
+}
+
+/*==================custom css for table in Reports ===========================*/
+.ttp-reports-table .ant-table-thead > tr > th:not(first-child) {
+  border-bottom: 1px solid rgba(5, 5, 5, 0.2);
+  border-left: 1px solid rgba(5, 5, 5, 0.2);
+  padding: 5px 8px !important;
+}
+
+.ttp-reports-table
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  th:first-child {
+  border-left: none !important;
+}
+/*.ttp-reports-table .ant-table-container table > thead > tr:first-child th:last-child {
+    border-left: none !important;
+}
+*/
+.ttp-reports-table .ant-table-column-sorter-up,
+.ant-table-column-sorter-down {
+  font-size: 9px !important;
+}
+
+.ttp-reports-table .ant-table-cell {
+  padding: 5px 8px !important;
+}
+
+.ttp-reports-table .ant-table .ant-table-row:hover td {
+  background: #f3f4faa1 !important;
+}
+
+.ttp-reports-table .ant-table-container table tr th,
+td {
+  border-radius: 0px !important;
+}
+
+.ttp-reports-table .ant-table-container table thead tr th {
+  background-color: white !important;
+  border-top: 1px solid rgba(5, 5, 5, 0.2) !important;
+  font-weight: 500;
+}
+
+.ttp-reports-table .ant-pagination-options {
+  display: block !important;
+  position: absolute;
+  left: 0;
+}
+
+.ttp-reports-table td.ant-table-column-sort {
+  background: none;
+}
+
+.expand-table .ant-table {
+  margin-block: -6px !important;
+  margin-inline: -8px !important;
+}
+
+/*==================custom css dashboard table =====================*/
+
+.dashboard-tables .ant-table-container table tr th,
+td {
+  border-radius: unset !important;
+}
+
+.ant-table-column-sorter-up,
+.ant-table-column-sorter-down {
+  font-size: 9px !important;
+}
+
+/*==================custom css ant notification=====================*/
+
+.ant-notification-notice .ant-notification-notice-message {
+  margin-bottom: 0px !important;
+}
+.ant-notification-notice-description {
+  margin-right: 30px !important;
+}
+/*==================custom form item class===========================*/
+.form-item-input {
+  margin-bottom: 18px;
+}
+
+.form-item-input-m-0 {
+  margin-bottom: 0px;
+}
+
+.text-unset .ant-form-item-label {
+  overflow: unset !important;
+  white-space: unset !important;
+}
+
+.ant-form-item-explain-error {
+  font-size: 13px;
+  height: 18px;
+}
+
+.ant-input-affix-wrapper {
+  box-shadow: none !important;
+}
+
+.ant-form-item-control-input {
+  min-height: 24px !important;
+}
+
+/*==================custom font-weight css===========================*/
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+/*==================custom display css===========================*/
+
+.d-flex {
+  display: flex;
+}
+.j-between {
+  justify-content: space-between;
+}
+.j-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+/*==================custom font-size css===========================*/
+.fs18 {
+  font-size: 18px;
+}
+
+.fs17 {
+  font-size: 17px;
+}
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs15 {
+  font-size: 15px;
+}
+
+.fs13 {
+  font-size: 13px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+/*==================custom button css===========================*/
+
+.ttp-edit-btn {
+  cursor: pointer;
+  margin: 0px 4px;
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid rgb(24, 144, 255, 0.2);
+}
+
+.ttp-delete-btn {
+  cursor: pointer;
+  margin: 0px 4px;
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid rgb(239, 83, 80, 0.2);
+}
+
+.ttp-btn {
+  line-height: 1;
+  border: 1px solid transparent;
+}
+
+.ttp-btn > .anticon + span {
+  margin-inline-start: 5px !important;
+}
+
+.ttp-btn-light {
+  color: #000;
+  background-color: #f8f9fa;
+  border: none !important;
+  margin-right: 8px;
+}
+
+.btn-clr-primary {
+  background: rgb(243 244 250);
+  color: rgb(55 125 255);
+  border-color: #d3e3ff;
+}
+
+.btn-clr-primary:hover {
+  color: rgb(55 125 255) !important;
+  opacity: 0.8 !important;
+  border-color: #d3e3ff !important;
+}
+
+.btn-primary-sm {
+  height: 24px !important;
+  padding: 1px 12px !important;
+  font-weight: 500;
+}
+
+.btn-primary-md {
+  height: 27px !important;
+  padding: 2px 12px !important;
+  font-weight: 500;
+}
+
+.btn-m-sm {
+  padding: 3px 35px !important;
+}
+
+.btn-clr-error {
+  background: rgb(243 244 250);
+  color: rgb(195 108 94 / 64%) !important;
+  border-color: rgb(195 108 94 / 64%);
+}
+
+.btn-clr-error:hover {
+  color: rgb(55 125 255) !important;
+  opacity: 0.8 !important;
+  border-color: #d3e3ff !important;
+}
+
+/*==================custom ant outline css===========================*/
+
+.ant-btn:not(:disabled):focus-visible {
+  outline: 0px solid #91caff;
+}
+
+.ant-menu-light .ant-menu-item:not(.ant-menu-item-disabled):focus-visible {
+  outline: 0px solid #91caff;
+}
+
+.ant-checkbox .ant-checkbox-input:focus-visible + .ant-checkbox-inner {
+  outline: 0px solid #91caff;
+}
+
+.ant-tabs .ant-tabs-tab-btn:focus-visible {
+  outline: 0px solid #91caff;
+}
+
+.ant-radio-button-wrapper:has(:focus-visible) {
+  outline: 0px solid #91caff;
+}
+
+.ant-picker-focused {
+  box-shadow: none;
+}
+
+.att-btn-sm:hover {
+  /*  background:#f3f4fa !important;*/
+  color: #377dff !important;
+  border-color: #d3eeff !important;
+}
+/*==================custom Input css===========================*/
+.borderLessInput {
+  border: none;
+  outline: none;
+  padding: 0px;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+.borderLessInput:focus {
+  border-bottom: 1px solid #bfcbd7;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+.borderedInput {
+  border: none;
+  border: 1px solid #dee2e6;
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+.borderedInput:focus {
+  border: 1px solid #bfcbd7;
+  box-shadow: none !important;
+}
+
+/*==================custom select css===========================*/
+
+.select-in-drawer .ant-select-selector {
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0px 0px !important;
+  height: 22px !important;
+}
+
+.select-in-drawer .ant-select-arrow {
+  inset-inline-end: 2px !important;
+}
+
+.select-in-drawer .ant-select-clear {
+  inset-inline-end: 2px !important;
+}
+
+.selectSalaryCss .ant-select-selector {
+  background: rgb(240 245 255) !important;
+  color: rgb(55 125 255) !important;
+  border-color: #d3e3ff !important;
+  box-shadow: none !important;
+  padding: 0px 10px !important;
+}
+
+.cus-select .ant-select-selection-item {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+}
+
+.cus-select .ant-select-selection-item .ant-select-selection-item-remove {
+  color: transparent !important;
+  display: none !important;
+}
+
+.cus-select .ant-select-selection-item .ant-select-selection-item-content {
+  cursor: pointer !important;
+}
+
+.custom-title {
+  border-bottom: 1px solid #d3d3d3 !important;
+  border-top: 1px solid #d3d3d3 !important;
+  border-radius: 0px !important;
+  font-size: 13px !important;
+}
+
+.custom-option {
+  border-radius: 0px !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  padding-left: 25px !important;
+}
+
+.cus-select .ant-select-selection-overflow-item-rest {
+  display: none !important;
+}
+
+.selectScroll .ant-select-item-option-disabled {
+  color: #918686 !important;
+  background-color: white !important;
+  cursor: not-allowed;
+}
+
+.selectScroll .rc-virtual-list-holder::-webkit-scrollbar {
+  width: 4px;
+}
+
+.selectScroll {
+  padding: 0px !important;
+  border-radius: 0px !important;
+}
+
+.selectScroll .rc-virtual-list-holder::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.selectScroll .rc-virtual-list-holder::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+  border-radius: 10px;
+}
+
+.placeholder-paddding .ant-select-selection-placeholder {
+  padding-top: 2px !important;
+}
+
+.multiselect-placeholder-padding .ant-select-selection-placeholder {
+  inset-inline-start: 0px !important;
+}
+/*================== error border color===========================*/
+
+.ant-picker-status-error {
+  border-color: #dee2e6 !important;
+}
+.ant-input-status-error {
+  border-color: #dee2e6 !important;
+}
+.ant-input-affix-wrapper {
+  border-color: #dee2e6 !important;
+}
+.ant-input-number-affix-wrapper {
+  border-color: #dee2e6 !important;
+}
+.ant-input-number {
+  border-color: #dee2e6 !important;
+}
+.ant-picker {
+  border-color: #dee2e6 !important;
+}
+.ant-select-selector {
+  border-color: #dee2e6 !important;
+}
+.ant-input-prefix {
+  color: unset !important;
+}
+.ant-input-number-prefix {
+  color: unset !important;
+}
+.ant-input-suffix {
+  color: unset !important;
+}
+
+/*==================custom css for select Dropdown===========================*/
+.ttp-custom-select {
+  padding: 4px 0px !important;
+  border-radius: 0px !important;
+}
+
+.ttp-custom-select .ant-select-item-option {
+  font-size: 13px !important;
+  min-height: 28px !important;
+  padding: 4px 10px !important;
+  border-radius: 0px;
+}
+
+.ttp-custom-select .rc-virtual-list-holder::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ttp-custom-select .rc-virtual-list-holder::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ttp-custom-select .rc-virtual-list-holder::-webkit-scrollbar-thumb {
+  background: #dcdcdc;
+}
+
+.ttp-custom-select .rc-virtual-list-scrollbar {
+  width: 4px !important;
+  background: #f1f1f1;
+}
+
+.ttp-custom-select .rc-virtual-list-scrollbar-thumb {
+  background: #dcdcdc !important;
+}
+
+/*==================custom search input css===========================*/
+.ttp-search-input {
+  padding: 2px 8px;
+  border-radius: 0.25rem;
+  width: 150px;
+  margin-left: 5px;
+  height: 27px;
+  outline: none;
+}
+
+.ttp-search-input:focus {
+  box-shadow: none !important;
+  border: 1px solid #bfcbd7 !important;
+}
+
+.ttp-search-input:focus-within {
+  box-shadow: unset !important;
+}
+
+/*==================custom margin css===========================*/
+
+.m-5 {
+  margin: 48px;
+}
+
+.mx-5 {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.my-5 {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.mb-5 {
+  margin-bottom: 48px;
+}
+
+.mt-5 {
+  margin-top: 48px;
+}
+
+.ms-5 {
+  margin-left: 48px;
+}
+
+.me-5 {
+  margin-right: 48px;
+}
+
+.m-4 {
+  margin: 24px;
+}
+
+.mx-4 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.my-4 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 24px;
+}
+
+.mt-4 {
+  margin-top: 24px;
+}
+
+.ms-4 {
+  margin-left: 24px;
+}
+
+.me-4 {
+  margin-right: 24px;
+}
+
+.m-3 {
+  margin: 16px;
+}
+
+.mx-3 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.my-3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 16px;
+}
+
+.ms-3 {
+  margin-left: 16px;
+}
+
+.me-3 {
+  margin-right: 16px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
+.mx-2 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.my-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.ms-2 {
+  margin-left: 8px;
+}
+
+.me-2 {
+  margin-right: 8px;
+}
+
+.m-1 {
+  margin: 4px;
+}
+
+.mx-1 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.my-1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.ms-1 {
+  margin-left: 4px;
+}
+
+.me-1 {
+  margin-right: 4px;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+/*==================custom Padding css===========================*/
+
+.p-5 {
+  padding: 48px;
+}
+
+.py-5 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.px-5 {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.pt-5 {
+  padding-top: 48px;
+}
+
+.pb-5 {
+  padding-bottom: 48px;
+}
+
+.ps-5 {
+  padding-left: 48px;
+}
+
+.pe-5 {
+  padding-right: 48px;
+}
+
+.p-4 {
+  padding: 24px;
+}
+
+.py-4 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.px-4 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pt-4 {
+  padding-top: 24px;
+}
+
+.pb-4 {
+  padding-bottom: 24px;
+}
+
+.ps-4 {
+  padding-left: 24px;
+}
+
+.pe-4 {
+  padding-right: 24px;
+}
+
+.p-3 {
+  padding: 16px;
+}
+
+.py-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.px-3 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.pt-3 {
+  padding-top: 16px;
+}
+
+.pb-3 {
+  padding-bottom: 16px;
+}
+
+.ps-3 {
+  padding-left: 16px;
+}
+
+.pe-3 {
+  padding-right: 16px;
+}
+
+.p-2 {
+  padding: 8px;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.pt-2 {
+  padding-top: 8px;
+}
+
+.pb-2 {
+  padding-bottom: 8px;
+}
+
+.ps-2 {
+  padding-left: 8px;
+}
+
+.pe-2 {
+  padding-right: 8px;
+}
+
+.p-1 {
+  padding: 4px;
+}
+
+.py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.pt-1 {
+  padding-top: 4px;
+}
+
+.pb-1 {
+  padding-bottom: 4px;
+}
+
+.ps-1 {
+  padding-left: 4px;
+}
+
+.pe-1 {
+  padding-right: 4px;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+/*=============custom Range Picker css =============*/
+
+/*.custom-range-picker .ant-picker-active-bar {
+    margin-inline-start: unset !important;
+}
+*/
+
+.custom-range-picker .ant-picker-clear {
+  inset-inline-end: 0px !important;
+}
+
+.empList .ant-form-item-explain-error {
+  margin-left: 10px;
+}
+
+/*=============custom Reports CSS =============*/
+.report-text-color {
+  cursor: pointer;
+  color: #2b76d2;
+}
+
+/*==================Employee panel css for dashboard===========================*/
+.active-stats {
+  padding: 5px 15px;
+  background: #ecffe9;
+  border-radius: 20px;
+}
+
+.text-success {
+  color: #61c855;
+}
+.text-danger {
+  color: #f85768;
+}
+.text-disabled {
+  color: #949494;
+}
+.text-primary {
+  color: #30a2ff;
+}
+.text-warning {
+  color: #5a60ff;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  bottom: 1px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.dot-disabled {
+  background: #949494;
+}
+
+.dot-danger {
+  background: #c85555;
+}
+
+.dot-success {
+  background: #61c855;
+}
+.dot-warning {
+  background: #5a60ff;
+}
+
+.att-stats .current-date {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+.att-stats .current-timer {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 6px;
+}
+
+.leave-count {
+  padding: 3px 9px;
+  background: whitesmoke;
+  border-radius: 5px;
+}
+.dashboard-common-table .ant-table-tbody .ant-table-cell {
+  padding: 5px 8px !important;
+  font-size: 13px !important;
+}
+.dashboard-common-table .ant-table-thead .ant-table-cell {
+  padding: 4px 8px !important;
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+  opacity: 50%;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+
+.dashboard-common-table
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  width: 0px !important;
+}
+.dashboard-common-table thead tr:first-child th:first-child {
+  border-start-start-radius: 0px !important;
+}
+
+.dashboard-common-table thead tr:first-child th:last-child {
+  border-start-end-radius: 0px !important;
+}
+
+.dashboard-common-table .ant-table-thead > tr > th {
+  background: #f8f8f8 !important;
+}
+
+.dashboard-common-table thead tr:first-child th:first-child {
+  padding-left: 20px !important;
+}
+.day-logs .ant-steps-item-icon {
+  display: none !important;
+}
+.day-logs .ant-steps-item-tail {
+  display: block !important;
+  margin-left: 50%;
+  width: 50px;
+}
+
+.checkin-status {
+  border-radius: 14px;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+.emp-dash-segment .ant-segmented-item {
+  width: 180px;
+}
+
+.custom-tail {
+  width: 6px;
+  height: 1px;
+  display: inline-block;
+  bottom: 3px;
+  position: relative;
+  margin-right: 5px;
+  background: #8f878730;
+}
+.emp-dash-border-right {
+  border-right: 0.5px solid #cbcbcb;
+}
+.day-log-col {
+  display: flex;
+}
+
+.day-log {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.member-count-tag {
+  height: 27px;
+  display: flex;
+  align-items: center;
+}
+.custom-badge-emp-req {
+  display: inline-block;
+  z-index: auto;
+  min-width: 20px;
+  height: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  white-space: nowrap;
+  text-align: center;
+  background: #4096ff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #ffffff;
+  transition: background 0.2s;
+  padding: 0px 8px;
+  margin-left: 4px;
+}
+
+/*==================drawer responsive css===========================*/
+@media (max-width: 770px) {
+  .emp-dash-border-right {
+    border-right: none;
+  }
+  .outer-since {
+    display: none;
+  }
+  .inner-since {
+    display: block;
+  }
+  .spacer-company {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .ant-drawer-content-wrapper {
+    width: 60% !important;
+  }
+  .att-mini-dash {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .emp-dash-segment .ant-segmented-item {
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .ant-drawer-content-wrapper {
+    width: 90% !important;
+  }
+
+  .DrawerPadding {
+    padding: 12px;
+  }
+
+  .ant-picker-panels {
+    flex-direction: column;
+  }
+}
