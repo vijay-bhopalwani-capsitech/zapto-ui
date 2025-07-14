@@ -1,11 +1,14 @@
 import { appUrls } from '@/config/navigationConfig';
-import { AButton, APasswordField, APhoneField, ATextField, FormikForm } from 'ant-ui';
+
 import { Col, Row, Space, Typography } from 'antd';
 import { FormikHelpers } from 'formik';
 import Link from 'next/link';
 import React from 'react';
-import { validateZodSchemaFormik } from 'ui-helpers';
+
 import { z } from 'zod';
+import { validateZodSchemaFormik } from '../../../../packages/ui-helpers';
+import { ATextField, FormikForm } from '../../../../packages/ant-ui';
+import { AButton } from '../../../../packages/ant-ui/buttons';
 
 export const BasicInfoStepZS = z.object({
     name: z.object({
@@ -41,7 +44,7 @@ const SendOTPByEmail = ({ isLoading, handleSubmit }: { isLoading: boolean; handl
                 </Row>
 
                 <ATextField type="email" name="email" label="Email address" placeholder="Enter your Email" />
-                <APhoneField name={'phone'} label="Phone number" placeholder="Enter your Phone number" />
+                {/* <APhoneField name={'phone'} label="Phone number" placeholder="Enter your Phone number" /> */}
                 {/* <APasswordField name="password" label="Password" placeholder="Enter your Password" /> */}
                 <Row justify={'start'}>
                     <AButton className="w-full" loading={isLoading} htmlType="submit" type="primary">

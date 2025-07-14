@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { BG_IMG, LOGIN_BANNER, LOGO_FULL, LOGO_WHITE } from '@/assets/images/imgAssets';
 import LoginForm from '@/components/auth/loginForm';
 import { selectCurrentTheme } from '@/redux/slices/appConfigSlice';
-import { ACard } from 'ant-ui';
+
 
 const font = Outfit({
     // weight: "400",

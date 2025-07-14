@@ -5,15 +5,17 @@ import { messages } from '@/lang';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Button, Col, Row, Space, theme, Typography, Card } from 'antd';
-import { AButton, APasswordField, ATextField, FormikForm } from 'ant-ui';
+
 import styled from 'styled-components';
 import { IAntTheme } from '@/theme/themeConfig';
 import Link from 'next/link';
 import { appUrls } from '@/config/navigationConfig';
-import { validateZodSchemaFormik } from 'ui-helpers';
+
 import { z } from 'zod';
 import Image from 'next/image';
 import { LOGO_FULL } from '@/assets/images/imgAssets';
+import { validateZodSchemaFormik } from '../../../packages/ui-helpers';
+import { APasswordField, ATextField, FormikForm } from '../../../packages/ant-ui';
 
 const validateSchema = z.object({
     email: z.string().min(1, 'Please provide email'),

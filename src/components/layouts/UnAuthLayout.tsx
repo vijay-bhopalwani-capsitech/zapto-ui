@@ -12,14 +12,14 @@ import { BsPower } from 'react-icons/bs';
 import { IoSettingsOutline } from 'react-icons/io5';
 import { AppDispatch } from '@/redux/store';
 // import { AbilityContext, useGetUserAbility } from '@/components/ui/ability';
-import { hexToRgba, useModalState } from 'ui-helpers';
+
 import { IAntTheme } from '@/theme/themeConfig';
 import { usePathname, useRouter } from 'next/navigation';
 import { MdLockReset } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
 import ResetPasswordModal from '@/components/settings/staff/password/ResetPasswordModal';
 import PageContainer from '@/utils/PageContainer';
-import { AButton } from 'ant-ui';
+
 import { selectCurrentTheme } from '@/redux/slices/appConfigSlice';
 import ModernFloatingHeader from './FloatingHeader';
 

@@ -1,8 +1,10 @@
 import { FormikHelpers, useFormikContext } from 'formik';
 import { z } from 'zod';
-import { validateZodSchemaFormik } from 'ui-helpers';
-import { AButton, AOTPField, ATextField, FormikForm } from 'ant-ui';
+
 import { Col, Row, Typography } from 'antd';
+import { AOTPField, FormikForm } from '../../../../packages/ant-ui';
+import { AButton } from '../../../../packages/ant-ui/buttons';
+import { validateZodSchemaFormik } from '../../../../packages/ui-helpers';
 
 export const IndividualVerificationWithOtpZS = z.object({
     email: z.string().min(1, 'Please provide email'),

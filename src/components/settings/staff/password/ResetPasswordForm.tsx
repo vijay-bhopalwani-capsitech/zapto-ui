@@ -1,10 +1,13 @@
-import { AButton, APasswordField, ATextField, FormikForm } from 'ant-ui';
+// import { AButton, APasswordField, ATextField, FormikForm } from 'ant-ui';
 import { Col, Row, theme } from 'antd';
 import { useFormikContext } from 'formik';
-import { validateZodSchemaFormik } from 'ui-helpers';
+// import { validateZodSchemaFormik } from 'ui-helpers';
 import { z } from 'zod';
 import { sendOtpRequest } from '@/services/authService';
 import { callApi } from '@/utils/apiUtils/callApi';
+import { APasswordField, FormikForm } from '../../../../../packages/ant-ui';
+import { AButton } from '../../../../../packages/ant-ui/buttons';
+import { validateZodSchemaFormik } from '../../../../../packages/ui-helpers';
 
 const ResetPasswordFormContent = ({ onBack }: { onBack: () => void }) => {
     const { values, errors, isSubmitting, setTouched } = useFormikContext<IResetPasswordFormValuesZS>();

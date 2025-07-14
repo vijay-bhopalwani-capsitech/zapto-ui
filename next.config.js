@@ -10,7 +10,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: ["ui-helpers", "@base/ant-ui"],
+  // transpilePackages: ["ui-helpers", "@base/ant-ui"],
   compiler: {
     styledComponents: true,
   },

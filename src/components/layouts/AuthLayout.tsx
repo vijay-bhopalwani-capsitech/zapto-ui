@@ -12,7 +12,7 @@ import { BsBuildingAdd, BsPower } from 'react-icons/bs';
 import { IoMoonOutline, IoSettingsOutline, IoSunnyOutline } from 'react-icons/io5';
 import { AppDispatch } from '@/redux/store';
 // import { AbilityContext, useGetUserAbility } from '@/components/ui/ability';
-import { hexToRgba, useModalState } from 'ui-helpers';
+
 import { IAntTheme } from '@/theme/themeConfig';
 import { usePathname, useRouter } from 'next/navigation';
 import { MdLockReset } from 'react-icons/md';
@@ -20,11 +20,12 @@ import { CgProfile } from 'react-icons/cg';
 import ResetPasswordModal from '@/components/settings/staff/password/ResetPasswordModal';
 import PageContainer from '@/utils/PageContainer';
 import { selectCurrentTheme, themeChanged } from '@/redux/slices/appConfigSlice';
-import { AButton } from 'ant-ui';
+
 import { IoIosNotifications, IoIosNotificationsOutline } from 'react-icons/io';
 import { AiOutlineSetting } from 'react-icons/ai';
 import { BellOutlined, MoonOutlined, SunOutlined } from '@ant-design/icons';
 import { FaChevronDown } from "react-icons/fa";
+import { hexToRgba, useModalState } from '../../../packages/ui-helpers';
 
 const { Text } = Typography;
 

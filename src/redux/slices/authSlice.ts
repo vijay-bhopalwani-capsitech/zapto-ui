@@ -1,9 +1,11 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { getProfileRequest, loginRequest, logoutRequest, userOnBoardingRequest, userChangePasswordRequest, registerUserRequest, updateProfileRequest } from '@/services/authService';
 import { RootState } from '@/redux/store';
-import { IAuthState, IGetProfileResult, IUser } from '@/@types/auth';
+
 import { callApiThunk } from '@/utils/apiUtils/callApiThunk';
-import { parseApiErrorResponse } from 'ui-helpers';
+import { parseApiErrorResponse } from '../../../packages/ui-helpers';
+// import { parseApiErrorResponse } from '../../../packages/ui-helpers';
+
 
 const initialState = {
     isAuthenticated: false,
@@ -29,7 +31,7 @@ export const loginUser = createAsyncThunk(
         },
         thunkApi
     ) => {
-        const response = await callApiThunk<IGetProfileResult>({
+        const response = await callApiThunk<any>({
             requestFunction: loginRequest({ email, password }),
             thunkApi,
             authErrorCode: 403,
@@ -37,13 +39,13 @@ export const loginUser = createAsyncThunk(
         if (response?.error) {
             return thunkApi.rejectWithValue(response);
         }
-        return response as IGetProfileResult;
+        return response as any;
     }
 );
 
 export const getUserProfile = createAsyncThunk(`${SLICE_NAME}/getUserProfile`, async (_, thunkApi) => {
     const accessToken = selectAccessToken(thunkApi.getState() as RootState);
-    const result = await callApiThunk<IGetProfileResult>({
+    const result = await callApiThunk<any>({
         requestFunction: getProfileRequest({ accessToken }),
         thunkApi,
     });
@@ -54,7 +56,7 @@ export const getUserProfile = createAsyncThunk(`${SLICE_NAME}/getUserProfile`, a
 });
 
 export const updateUserProfile = createAsyncThunk(`${SLICE_NAME}/updateUserProfile`, async (payload: any, thunkApi) => {
-    const response = await callApiThunk<IGetProfileResult>({
+    const response = await callApiThunk<any>({
         requestFunction: updateProfileRequest(payload),
         thunkApi,
         authErrorCode: 403,
@@ -62,7 +64,7 @@ export const updateUserProfile = createAsyncThunk(`${SLICE_NAME}/updateUserProfi
     if (response?.error) {
         return thunkApi.rejectWithValue(response);
     }
-    return response as IGetProfileResult;
+    return response as any;
 });
 
 export const logoutUser = createAsyncThunk(`${SLICE_NAME}/logout`, async (_, thunkApi) => {
@@ -127,7 +129,7 @@ export const userChangePassword = createAsyncThunk(
 
 export const registerUser = createAsyncThunk(`${SLICE_NAME}/register`, async (payload: any, thunkAPI) => {
     try {
-        const response = await callApiThunk<IGetProfileResult>({
+        const response = await callApiThunk<any>({
             requestFunction: registerUserRequest(payload),
             callRefreshTokenOnAuthError: false,
             thunkApi: thunkAPI,
@@ -143,7 +145,7 @@ export const registerUser = createAsyncThunk(`${SLICE_NAME}/register`, async (pa
 
 const authSlice = createSlice({
     name: SLICE_NAME,
-    initialState: initialState as IAuthState,
+    initialState: initialState as any,
     reducers: {
         setTokens: (state, action) => {
             const { accessToken, refreshToken } = action?.payload ?? {};
@@ -206,7 +208,7 @@ const authSlice = createSlice({
             state.initialAuthLoading = false;
             state.authLoading = false;
             if ('user' in payload) {
-                state.user = payload.user as IUser;
+                state.user = payload.user as any;
             }
         });
         builder.addCase(getUserProfile.rejected, (state) => {
@@ -221,7 +223,7 @@ const authSlice = createSlice({
             state.initialAuthLoading = false;
             state.authLoading = false;
             if ('user' in payload) {
-                state.user = payload.user as IUser;
+                state.user = payload.user as any;
             }
         });
         builder.addCase(updateUserProfile.rejected, (state) => {

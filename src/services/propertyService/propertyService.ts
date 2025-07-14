@@ -1,8 +1,7 @@
 import { callApi } from '@/utils/apiUtils/callApi';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { Axios } from 'axios';
-import { IPaginatedListRequestResult } from 'ui-helpers';
-import { ISkillZod } from 'api-definitions';
+
 import { API_BASE_URL } from '..';
 
 const PROPERTY_BASE_URL = `${API_BASE_URL}/property`;

@@ -7,11 +7,12 @@ import { messages } from '@/lang';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { Button, Col, Row, Space, theme, Typography } from 'antd';
-import { AButton, APasswordField, ATextField, FormikForm } from 'ant-ui';
+// import { AButton, APasswordField, ATextField, FormikForm } from 'ant-ui';
 import styled from 'styled-components';
 import { IAntTheme } from '@/theme/themeConfig';
 import { LOGIN_IMG, LOGO_FULL } from '@/assets/images/imgAssets';
 import { StyledLogoContainer } from '@/app/(admin_app)/(auth)/login/page';
+import { APasswordField, ATextField, FormikForm } from '../../../packages/ant-ui';
 
 const validateSchema = Yup.object().shape({
     email: Yup.string().email().required(messages.EMAIL_REQUIRED),

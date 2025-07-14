@@ -10,9 +10,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { LoadingOutlined } from '@ant-design/icons';
 
-import { AutoSaveForm } from 'ant-ui';
-import { useDebounce, useModalState } from 'ui-helpers';
-import { AButton, ACard, ATextField } from 'ant-ui';
+// import { AutoSaveForm } from 'ant-ui';
+// import { useDebounce, useModalState } from 'ui-helpers';
+// import { AButton, ACard, ATextField } from 'ant-ui';
 
 import CrudModuleRowActions from './CrudRowActions';
 import { ListPagination } from '@/components/ui/partials/ListPagination';
@@ -25,6 +25,9 @@ import { windowCreated } from '@/redux/slices/formWindowsSlice.ts';
 // import { permissionTypes } from '@/config/permission';
 import { DrawerPanelProps } from 'antd/lib/drawer/DrawerPanel';
 import { RowSelectMethod } from 'antd/lib/table/interface';
+import { useDebounce, useModalState } from '../../../../../packages/ui-helpers';
+import { ACard, ATextField, AutoSaveForm } from '../../../../../packages/ant-ui';
+import { AButton } from '../../../../../packages/ant-ui/buttons';
 
 const defaultStatusOptions = [
     {

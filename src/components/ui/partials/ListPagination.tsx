@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction, useCallback, useMemo } from "react";
 import { Col, Pagination, Row } from 'antd';
-import { ASelectInput, useUiSettingsContext } from "ant-ui";
+import { ASelectInput, useUiSettingsContext } from "../../../../packages/ant-ui";
+
 
 interface ILimitOption {
     label: string;

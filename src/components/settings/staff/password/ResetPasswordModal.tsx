@@ -1,10 +1,11 @@
 import React from 'react';
-import { AModal } from 'ant-ui';
+
 import ResetPasswordForm, { IResetPasswordFormValuesZS } from '@/components/settings/staff/password/ResetPasswordForm';
 import { callApi } from '@/utils/apiUtils/callApi';
 import { getUserProfile, userChangePassword } from '@/redux/slices/authSlice';
 import { useDispatch } from 'react-redux';
 import { AppDispatch } from '@/redux/store';
+import { AModal } from '../../../../../packages/ant-ui';
 
 const initialValues: IResetPasswordFormValuesZS = {
     oldPassword: '',

@@ -1,7 +1,9 @@
 import { SIGN_UP_BUSINESS, SIGN_UP_INDIVIDUAL } from '@/assets/images/imgAssets';
-import { AButton, ACard } from 'ant-ui';
+
 import { Space, Typography } from 'antd';
 import React from 'react';
+import { ACard } from '../../../../packages/ant-ui';
+import { AButton } from '../../../../packages/ant-ui/buttons';
 
 const JoinCommunity = ({ userType, handleNextStep }: { userType: String; handleNextStep: () => void }) => {
     return (

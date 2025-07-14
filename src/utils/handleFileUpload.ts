@@ -1,6 +1,7 @@
 import { callApi } from '@/utils/apiUtils/callApi';
-import { IUploadFileResult } from 'ui-helpers';
+// import { IUploadFileResult } from 'ui-helpers';
 import { uploadFileRequest } from '@/services/fileUploadService';
+import { IUploadFileResult } from '../../packages/ui-helpers';
 
 /**
  * api call for upload File

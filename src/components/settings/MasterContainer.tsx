@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import { Col, Row, TabsProps } from 'antd';
 import { useTheme } from 'styled-components';
 import MasterSidebar from './MasterSidebar';
-import { ATabs } from 'ant-ui';
+
 import StaffModule from './staff/StaffModule';
 import { appUrls } from '@/config/navigationConfig';
 import { useRouter } from 'next/navigation';
+import { ATabs } from '../../../packages/ant-ui';
 
 function MastersContainer({ children }: { children: JSX.Element }) {
     const navigate = useRouter();

@@ -10,7 +10,7 @@ import { QueryClient } from '@tanstack/query-core';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { App as AntdApp } from 'antd';
 
-import { UiSettingsProvider } from 'ant-ui/settings';
+
 
 import { AntThemeProvider } from '@/components/ui/AntdThemeProvider';
 import StyledAntdThemeProvider from '@/components/ui/StyledAntdThemeProvider';
@@ -23,6 +23,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { UiSettingsProvider } from '../../../packages/ant-ui';
 
 const inter = Outfit({ subsets: ['latin'] });
 

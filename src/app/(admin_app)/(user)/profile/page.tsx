@@ -4,10 +4,12 @@ import { Card, Button, Drawer, Row, Col, Space, Typography, Avatar, Divider, the
 import { EditOutlined, UserOutlined, RightOutlined } from '@ant-design/icons';
 import { Formik, Form } from 'formik';
 import * as z from 'zod';
-import { ADatePickerField, AFileUploadButtonField, ATelField, ATextField } from 'ant-ui';
+// import { ADatePickerField, AFileUploadButtonField, ATelField, ATextField } from 'ant-ui';
 import { useSelector } from 'react-redux';
 import { selectUserProfile } from '@/redux/slices/authSlice';
-import { convertNameObjectToString } from 'ui-helpers';
+import { convertNameObjectToString } from '../../../../../packages/ui-helpers';
+import { ADatePickerField, ATelField, ATextField } from '../../../../../packages/ant-ui';
+
 
 const { Title, Text } = Typography;
 
@@ -310,7 +312,7 @@ const UserProfilePage = () => {
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                                     <Avatar size={80} icon={<UserOutlined />} />
                                     <Space>
-                                        <AFileUploadButtonField name="profileImage">Upload</AFileUploadButtonField>
+                                        {/* <AFileUploadButtonField name="profileImage">Upload</AFileUploadButtonField> */}
                                         <Button size="small" type="text">
                                             Remove
                                         </Button>

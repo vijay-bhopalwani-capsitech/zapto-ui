@@ -1,8 +1,10 @@
 import { FormikHelpers, useFormikContext } from 'formik';
 import { z } from 'zod';
-import { validateZodSchemaFormik } from 'ui-helpers';
-import { AButton, AOTPField, APasswordField, ATextField, FormikForm } from 'ant-ui';
+// import { AButton, AOTPField, APasswordField, ATextField, FormikForm } from 'ant-ui';
 import { Col, Row, Typography } from 'antd';
+import { validateZodSchemaFormik } from '../../../../packages/ui-helpers';
+import { APasswordField, FormikForm } from '../../../../packages/ant-ui';
+import { AButton } from '../../../../packages/ant-ui/buttons';
 
 export const SignUPWithPasswordZS = z
     .object({
